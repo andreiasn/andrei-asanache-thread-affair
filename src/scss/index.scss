@@ -1,6 +1,5 @@
 // tilda este un alias pentru node_modules
 $fa-font-path: '~@fortawesome/fontawesome-free/webfonts';
-
 @import '~@fortawesome/fontawesome-free/scss/fontawesome';
 @import '~@fortawesome/fontawesome-free/scss/brands';
 @import '~@fortawesome/fontawesome-free/scss/regular';
@@ -10,8 +9,22 @@ $fa-font-path: '~@fortawesome/fontawesome-free/webfonts';
 @import './../../node_modules/bootstrap/scss/bootstrap-utilities.scss';
 @import './../../node_modules/bootstrap/scss/bootstrap-grid.scss';
 
+// reset
+@import './reset';
+
+// fonts
 @import './fonts';
+
+// variables
+@import './variables';
+
+// start project
+@import './shared/index';
+@import './home/index';
+@import './catalog/index';
 
 body {
   font-family: 'Roboto', 'sans-serif';
+  color: $gray-primary;
+  font-size: 16px;
 }

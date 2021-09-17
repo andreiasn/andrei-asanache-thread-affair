@@ -7,10 +7,10 @@
     name="viewport"
     content="width=device-width, initial-scale=1.0"
   >
-  <title>Thread affair</title>
+  <title>Thread Affair</title>
 </head>
 
-<body>
+<body class="home-page">
   <header class="header container">
     <% include html/header/header-main.html %>
     <% include html/header/header-nav.html %>
@@ -22,7 +22,17 @@
     </header>
 
     <main class="content-main">
+      <% include html/home/home-catalog-preview.html %>
 
+      <% include html/home/home-catalog-preview.html %>
+
+      <% include html/home/home-newsletter.html %>
+
+      <% include html/home/home-social.html %>
+
+      <% include html/home/home-store-locator.html %>
+
+      <% include html/home/home-payment.html %>
     </main>
   </main>
 
@@ -31,6 +41,5 @@
     <% include html/footer/footer-secondary.html %>
   </footer>
 </body>
-
 
 </html>
